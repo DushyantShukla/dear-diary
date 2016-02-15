@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1"></meta>
+<title>Dear Diary</title>
+
+<!-- Bootstrap -->
+<link th:href="@{/css/bootstrap.min.css}"
+	href="../static/css/bootstrap.min.css" rel="stylesheet"></link>
+<link href="../static/css/normalize.css" th:href="@{/css/normalize.css}"
+	rel="stylesheet"></link>
+<!-- custom styling -->
+<link href="../static/css/welcomepage.css"
+	th:href="@{/css/welcomepage.css}" rel="stylesheet"></link>
+<link href="../static/css/innersection.css"
+	th:href="@{/css/innersection.css}" rel="stylesheet"></link>
+<link href="../static/css/signup-signin-accordion.css"
+	th:href="@{/css/signup-signin-accordion.css}" rel="stylesheet"></link>
+
+<link rel="icon" type="/image/png" href="../static/imgs/favicon.ico"></link>
+
+<link href='http://fonts.googleapis.com/css?family=Allura'
+	rel='stylesheet' type='text/css'></link>
+
+</head>
+
+<body>
+	<div class="container-fluid" style="height: 100%;">
+		<div id="maincontainer">
+			<div id="innercontainer">
+				<div id="header">
+					<article class="accordion">
+
+						<section id="signin">
+							<a href="#signin">sign in</a>
+							<form class="form-inline" role="form" id="sign-in-form">
+								<div class="form-group form-group-sm">
+									<input type="email" id="formGroupInputSmall"
+										class="form-control" placeholder="email"></input>
+								</div>
+								<div class="form-group form-group-sm">
+									<input type="password" id="formGroupInputSmall"
+										class="form-control" placeholder="password"></input>
+								</div>
+								<div class="checkbox">
+									<label
+										style="font-weight: bold; font-family: Allura; font-size: 18px;"><input
+										type="checkbox"> </input>Remember me</label>
+								</div>
+								<button id="submit" href="">lets write</button>
+							</form>
+						</section>
+
+						<section id="signup">
+							<a href="#signup">sign up</a>
+							<form class="form-inline" role="form" id="sign-up-form">
+								<div class="form-group form-group-sm">
+									<input type="text" id="formGroupInputSmall"
+										class="form-control" placeholder="first name"></input>
+								</div>
+
+								<div class="form-group form-group-sm">
+									<input type="text" id="formGroupInputSmall"
+										class="form-control" placeholder="middle name"></input>
+								</div>
+
+								<div class="form-group form-group-sm">
+									<input type="text" id="formGroupInputSmall"
+										class="form-control" placeholder="last name"></input>
+								</div>
+
+								<div class="form-group form-group-sm">
+									<input type="email" id="formGroupInputSmall"
+										class="form-control" placeholder="email"></input>
+								</div>
+
+								<div class="form-group form-group-sm">
+									<input type="password" id="formGroupInputSmall"
+										class="form-control" placeholder="password"></input>
+								</div>
+								<button id="submit" href="">lets write</button>
+							</form>
+						</section>
+
+
+					</article>
+
+				</div>
+				<!-- header ends -->
+				<p id="deardiary">Dear Diary...</p>
+			</div>
+		</div>
+	</div>
+	<!-- Bootstrap core JavaScript -->
+	<!-- Placed at the end of the document so the pages load faster -->
+	<script
+		src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<script type="text/javascript" src="../static/js/bootstrap.min.js"></script>
+</body>
+</html>

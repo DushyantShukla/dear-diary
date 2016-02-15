@@ -1,0 +1,79 @@
+buildscript {
+	ext {
+		springBootVersion = '1.3.0.RELEASE'
+	}
+	repositories {
+		mavenCentral()
+	}
+	dependencies {
+		classpath("org.springframework.boot:spring-boot-gradle-plugin:${springBootVersion}") 
+		classpath('io.spring.gradle:dependency-management-plugin:0.5.4.RELEASE')
+	}
+}
+
+apply plugin: 'java'
+apply plugin: 'eclipse'
+apply plugin: 'idea'
+apply plugin: 'spring-boot' 
+apply plugin: 'io.spring.dependency-management' 
+apply plugin: 'war'
+
+war {
+	baseName = 'diary'
+	version = '0.0.1-SNAPSHOT'
+}
+
+sourceCompatibility = 1.8
+targetCompatibility = 1.8
+
+repositories {
+	mavenCentral()
+}
+
+
+dependencies {
+	compile('org.springframework.boot:spring-boot-starter-data-jpa')
+	compile('org.springframework.boot:spring-boot-starter-security')
+	compile('org.springframework.boot:spring-boot-starter-thymeleaf')
+	compile('org.springframework.boot:spring-boot-starter-web')
+	testCompile('org.springframework.boot:spring-boot-starter-test')
+	compile('org.springframework:spring-test:4.2.0.RELEASE')
+	
+	
+	testCompile 'com.jayway.jsonpath:json-path'
+	
+	compile 'org.hibernate:hibernate-validator'
+    compile 'postgresql:postgresql:9.1-901-1.jdbc4'
+    compile 'com.google.guava:guava:16.0.1'
+    compile 'javax.inject:javax.inject:1'
+
+    compile 'org.hibernate:hibernate-core:4.3.6.Final'
+    compile 'org.javassist:javassist:3.15.0-GA'
+    compile 'commons-dbcp:commons-dbcp:1.4' 
+    compile 'commons-codec:commons-codec:1.9'
+    compile 'com.googlecode.json-simple:json-simple:1.1'
+    
+    
+    runtime('org.hsqldb:hsqldb:2.3.1')
+    
+    //testcompile 'org.mockito:mockito-core:1.9.5', 'junit:junit:4.11' /*, 'org.hemcrest:hamcrest-all:1.3'*/ 
+    
+	compile('org.webjars:angularjs:1.3.14')
+	compile('org.webjars:bootstrap:3.3.1')
+	
+	compile 'org.jsondoc:spring-boot-starter-jsondoc:1.1.12'
+	compile 'org.jsondoc:jsondoc-ui-webjar:1.1.12'
+
+}
+
+
+eclipse {
+	classpath {
+		 containers.remove('org.eclipse.jdt.launching.JRE_CONTAINER')
+		 containers 'org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.8'
+	}
+}
+
+task wrapper(type: Wrapper) {
+	gradleVersion = '2.9'
+}
