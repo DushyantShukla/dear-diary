@@ -12,8 +12,10 @@ a:hover {
   text-decoration: none;
 }
 html, body {
+	margin: 0;
+	padding: 0;
 	height: 100%;
-	/* 	background-color: #4B088A; */
+	background-color: black;
 }
 
 body {
@@ -23,6 +25,7 @@ body {
 /* 	text-shadow: 0 1px 3px rgba(0, 0, 0, .5); */
 	color: #fff;
 	overflow-y: hidden;
+	overflow-x: hidden;
 	opacity: 1;
     transition: 3s opacity;
 }
@@ -56,7 +59,7 @@ body.fade-out {
 }
 
 #deardiary {
-	margin-top: 170px;
+	margin-top: 150px;
 	font-size: 100px;
 	font-family: Allura;
 	color: #4d4d4d;
@@ -124,37 +127,110 @@ body.fade-out {
 }
 
 #registration {
-	margin-left: 73em;
-	background-color: #efefef;
+	margin-left: 72em;
+/* 	background-color: #efefef; */
 	background-size: cover;
-	border: 2px solid #efefef;
+/* 	border: 2px solid #efefef; */
+/* 	border: 2px solid red; */
 	border-radius: 10px;
 	width: 25em;
 	color: #4d4d4d;
 	cursor: pointer;
 }
 
+#registration-toggler{
+/* 	border: 2px solid black;	 */
+}
 
 #box{
     display: none; 
-    border: 2px solid #efefef;
+/*     border: 2px solid #efefef; */
+/*     border: 2px solid green; */
     border-radius: 10px;
-    background-color: #efefef;
-    height: 240px; 
+/*     background-color: #efefef; */
+    height: 210px; 
     overflow-y: hidden;
 }
 
 #login-form{
 	height: 200px;
-	border: 1px solid black;
+/* 	border: 1px solid black; */
 }
 
 #registration-form{
+	padding-top: 40px;
+/* 	margin-top:50px; */
 	height: 200px;
-	border: 1px solid yellow;
+/* 	border: 1px solid purples; */
 }
 
 #forgot-password-form{
+	padding-top: 0px;
+ 	margin-top:60px; 
 	height: 200px;
-	border: 1px solid pink;
+/* 	border: 1px solid pink; */
+}
+
+fieldset p{
+/* 	margin-top: 5px; */
+}
+
+fieldset {
+    border:  3px solid #ccc;
+    -moz-border-radius:5px;
+	-webkit-border-radius:5px;
+	border-radius:5px;
+}
+
+input {
+  border: 2px solid #ccc;
+  -moz-border-radius:5px;
+	-webkit-border-radius:5px;
+	border-radius:5px;
+}
+
+input:hover{
+	border: 2px solid #4d4d4d;
+}
+
+input:focus{
+	outline:none !important;
+	border: 2px solid #4d4d4d;
+}
+
+button:focus{
+	outline:none !important;
+/* 	font-weight: bold; */
+}
+
+
+#submit-button{
+	background-color:#ffffff;
+	border: 2px solid #ccc;
+	color:#ccc;
+	text-decoration:none;
+	cursor:pointer;
+	-moz-border-radius:5px;
+	-webkit-border-radius:5px;
+	border-radius:5px;
+}
+
+#submit-button:hover{
+	background-color:#ffffff;
+	border: 2px solid #4d4d4d;
+	color:#4d4d4d;
+/* 	font-weight: bold; */
+/* 	text-decoration:none; */
+/* 	cursor:pointer; */
+/* 	-moz-border-radius:5px; */
+/* 	-webkit-border-radius:5px; */
+/* 	border-radius:5px; */
+}
+/* input placeholder{ */
+/* 	font-weight: bold; */
+/* } */
+/* form legend { */
+/* 	text-align:left; */
+/* 	margin-left:10px; */
+/* 	} */
 }

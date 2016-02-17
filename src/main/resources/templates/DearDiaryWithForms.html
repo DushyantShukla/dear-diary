@@ -17,7 +17,9 @@
 <link href="../static/css/signup-signin-accordion.css"
 	th:href="@{/css/signup-signin-accordion.css}" rel="stylesheet"></link>
 
-<link rel="icon" type="/image/png" href="../static/imgs/favicon.ico"></link>
+
+<link rel="icon" type="image/gif" href="../static/imgs/animated_favicon1.gif"></link>
+<link rel="shortcut icon" type="/image/png" href="../static/imgs/favicon1.ico"></link>
 
 <link href='http://fonts.googleapis.com/css?family=Allura'
 	rel='stylesheet' type='text/css'></link>
@@ -32,33 +34,118 @@
 		<div id="innercontainer">
 			<div id="header">
 				<div id="registration">
-				
+
 					<div id="registration-toggler">
 						<h5 style="font-weight: bold; text-shadow: none;">sign
 							in/sign up</h5>
 					</div>
-		
+
 					<div id="box">
 
-						<a href="#workspace" class="page-forward">Click to scroll down</a>
+						<!-- 						<a href="#workspace" class="page-forward">Click to scroll down</a> -->
 
 						<div id="login-form">
-						  <form>
-						  	<input type="email" placeholder="email"></input>
-						  	<input type="password" placeholder="password"></input>
-						  </form>
-							<a href="#registration-form" class="form-scroll">Click to
-								registration form</a>
+							<form>
+								<fieldset>
+									<legend
+										style="font-size: 15px; color: #4d4d4d; font-weight: bold;">login</legend>
+									<p>
+										<input type="email" placeholder="e-mail" required
+											maxlength="512" width="100px" style="width: 300px;"></input>
+									</p>
+									<p>
+										<input type="password" placeholder="password" required
+											maxlength="512" style="width: 300px;"></input>
+									</p>
+									<div>
+										<p>
+											<input type="checkbox"
+												style="float: left; margin-left: 11.5px;" id="remeber"><label
+												for="remember" style="float: left; margin-left: 10px;">remember
+												me</label> <a href="#workspace" class="page-forward"><button
+												id="submit-button" style="float: right; margin-right: 14px;">sign in</button></a>
+										</p>
+									</div>
+									<p style="float: left; margin-left: 10.5px; font-weight: bold;">
+										not a member yet?<a href="#registration-form"
+											class="form-scroll" style="float: right; margin-left: 89px; font-weight: bold;">register
+											here</a>
+									</p>
+									<p style="float: left; margin-left: 10px; font-weight: bold;">
+										forgot password?<a href="#forgot-password-form"
+											class="form-scroll" style="float: right; margin-left: 40px; font-weight: bold;">reset
+											password here</a>
+									</p>
+								</fieldset>
+							</form>
+							<!-- 							<a href="#registration-form" class="form-scroll">Click to -->
+							<!-- 								registration form</a> -->
 						</div>
 
 						<div id="registration-form">
-							<a href="#login-form" class="form-scroll">Click to login form</a>
+							<!-- 							<a href="#login-form" class="form-scroll">Click to login form</a> -->
+							<form>
+								<fieldset>
+									<legend
+										style="font-size: 15px; color: #4d4d4d; font-weight: bold;">register</legend>
+									<p>
+										<input type="text" placeholder="first name" 
+											maxlength="64" style="width: 97px;"></input>
+											<input type="text" placeholder="middle name" 
+											maxlength="64" style="width: 97px;"></input>
+											<input type="text" placeholder="last name" 
+											maxlength="64" style="width: 97px;"></input>
+									</p>
+									
+									<p>
+										<input type="email" placeholder="e-mail"
+											maxlength="512" width="100px" style="width: 300px;"></input>
+									</p>
+									<p>
+										<input type="password" placeholder="password" 
+											maxlength="512" style="width: 300px;"></input>
+									</p>
+									<div>
+										<p>
+											 <a href="#workspace" class="page-forward"><button
+												id="submit-button" style="float: right; margin-right: 13px;">sign up</button></a>
+										</p>
+									</div>
+									<p style="float: left; margin-left: 10px; font-weight: bold;">
+										already have an account?<a href="#login-form" class="form-scroll"
+											style="float: right; margin-left: 55px; font-weight: bold;">login here</a>
+									</p>
+									
+								</fieldset>
+							</form>
 						</div>
 
 						<div id="forgot-password-form">
-							<a href="#registration-form" class="form-scroll">Click to
-								registration form</a> <a href="#login-form" class="form-scroll">Click
-								to login form</a>
+<!-- 							<a href="#registration-form" class="form-scroll">Click to -->
+<!-- 								registration form</a> <a href="#login-form" class="form-scroll">Click -->
+<!-- 								to login form</a> -->
+								<form>
+								<fieldset>
+									<legend
+										style="font-size: 15px; color: #4d4d4d; font-weight: bold;">recover your password</legend>
+									<p>
+										<input type="email" placeholder="e-mail" required
+											maxlength="512" width="100px" style="width: 300px;"></input>
+									</p>
+									
+									<div>
+										<p>
+											 <a href="#workspace" class="page-forward"><button
+												id="submit-button" style="float: right; margin-right: 13px; width:50px;">go</button></a>
+										</p>
+									</div>
+									<p style="float: left; margin-left: 10.5px; font-weight: bold;">
+										already a member?<a href="#login-form" class="form-scroll"
+											style="float: right; margin-left: 100px; font-weight: bold;">login here</a>
+									</p>
+									
+								</fieldset>
+							</form>
 						</div>
 
 					</div>
