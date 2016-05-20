@@ -44,10 +44,45 @@
 	<!-- Placed at the end of the document so the pages load faster -->
 	<script
 		src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-	<script type="text/javascript" src="../static/js/bootstrap.min.js"></script>
-	<script type="text/javascript" src="../static/js/scrolling.js"></script>
-	<script type="text/javascript" src="../static/js/toggle-on-hover.js"></script>
-	<script type="text/javascript" src="../static/js/fading.js"></script>
+	<script type="text/javascript" src="../static/js/bootstrap.min.js" th:src="@{/js/bootstrap.min.js}"></script>
+	<script type="text/javascript" src="../static/js/scrolling.js" th:src="@{/js/scrolling.js}"></script>
+	<script type="text/javascript" src="../static/js/toggle-on-hover.js" th:src="@{/js/toggle-on-hover.js}"></script>
+	<script type="text/javascript" src="../static/js/fading.js" th:src="@{/js/fading.js}"></script>
 
 </body>
 </html>
+
+<!-- MerchantOnBoarding form CYB14005-807
+function loadStates(selectFieldId,countryId){
+	$(selectFieldId).find('option').remove();
+	var selectedValue = $(selectFieldId).attr('value');
+	if(selectedValue == ''){
+		$(selectFieldId).append($('<option>', { 
+			value: '',
+			text : 'Select State', 
+			selected : true
+		}));
+	}
+	if(countryId != null && countryId != -1 )
+	{
+		$.ajax({
+			type:'get',
+			url:'countries/'+countryId+'/states',
+			cache:false,
+			success: function(states){
+				$.each(states,function(i,state){
+					var selected = state.code == selectedValue ? true : false;
+					$(selectFieldId).append($('<option>', { 
+						value: state.code,
+						text : state.name, 
+						selected : selected
+					}));
+				});
+			}
+		});
+	}
+}-->
+
+<!-- UserAudit CYB14005-805
+$('.alert-danger').delay(4000).fadeOut("slow");			
+-->

@@ -11,11 +11,11 @@ a:hover {
   color: #333333;
   text-decoration: none;
 }
-html, body {
+html{
 	margin: 0;
 	padding: 0;
 	height: 100%;
-	background-color: black;
+	background-color: white;
 }
 
 body {

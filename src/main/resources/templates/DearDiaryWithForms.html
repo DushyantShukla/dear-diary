@@ -17,13 +17,12 @@
 <link href="../static/css/signup-signin-accordion.css"
 	th:href="@{/css/signup-signin-accordion.css}" rel="stylesheet"></link>
 
-
-<link rel="icon" type="image/gif" href="../static/imgs/animated_favicon1.gif"></link>
-<link rel="shortcut icon" type="/image/png" href="../static/imgs/favicon1.ico"></link>
+<link rel="icon" type="image/gif" href="../static/imgs/animated_favicon1.gif" th:href="@{/imgs/animated_favicon1.gif}"></link>
+<link rel="shortcut icon" type="/image/png" href="../static/imgs/favicon1.ico" th:href="@{/imgs/favicon1.ico}"></link>
 
 <link href='http://fonts.googleapis.com/css?family=Allura'
 	rel='stylesheet' type='text/css'></link>
-
+	
 </head>
 
 <body>
@@ -50,17 +49,17 @@
 									<legend
 										style="font-size: 15px; color: #4d4d4d; font-weight: bold;">login</legend>
 									<p>
-										<input type="email" placeholder="e-mail" required
+										<input type="email" placeholder="e-mail"
 											maxlength="512" width="100px" style="width: 300px;"></input>
 									</p>
 									<p>
-										<input type="password" placeholder="password" required
+										<input type="password" placeholder="password"
 											maxlength="512" style="width: 300px;"></input>
 									</p>
 									<div>
 										<p>
 											<input type="checkbox"
-												style="float: left; margin-left: 11.5px;" id="remeber"><label
+												style="float: left; margin-left: 11.5px;" id="remeber"></input><label
 												for="remember" style="float: left; margin-left: 10px;">remember
 												me</label> <a href="#workspace" class="page-forward"><button
 												id="submit-button" style="float: right; margin-right: 14px;">sign in</button></a>
@@ -73,7 +72,7 @@
 									</p>
 									<p style="float: left; margin-left: 10px; font-weight: bold;">
 										forgot password?<a href="#forgot-password-form"
-											class="form-scroll" style="float: right; margin-left: 40px; font-weight: bold;">reset
+											class="form-scroll" style="float: right; margin-left: 45px; font-weight: bold;">reset
 											password here</a>
 									</p>
 								</fieldset>
@@ -113,7 +112,7 @@
 									</div>
 									<p style="float: left; margin-left: 10px; font-weight: bold;">
 										already have an account?<a href="#login-form" class="form-scroll"
-											style="float: right; margin-left: 55px; font-weight: bold;">login here</a>
+											style="float: right; margin-left: 62px; font-weight: bold;">login here</a>
 									</p>
 									
 								</fieldset>
@@ -129,7 +128,7 @@
 									<legend
 										style="font-size: 15px; color: #4d4d4d; font-weight: bold;">recover your password</legend>
 									<p>
-										<input type="email" placeholder="e-mail" required
+										<input type="email" placeholder="e-mail" 
 											maxlength="512" width="100px" style="width: 300px;"></input>
 									</p>
 									
@@ -141,7 +140,7 @@
 									</div>
 									<p style="float: left; margin-left: 10.5px; font-weight: bold;">
 										already a member?<a href="#login-form" class="form-scroll"
-											style="float: right; margin-left: 100px; font-weight: bold;">login here</a>
+											style="float: right; margin-left: 104px; font-weight: bold;">login here</a>
 									</p>
 									
 								</fieldset>
@@ -163,11 +162,11 @@
 	<!-- Placed at the end of the document so the pages load faster -->
 	<script
 		src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-	<script type="text/javascript" src="../static/js/bootstrap.min.js"></script>
-	<script type="text/javascript" src="../static/js/scrolling.js"></script>
-	<script type="text/javascript" src="../static/js/form-scroll.js"></script>
-	<script type="text/javascript" src="../static/js/toggle-on-hover.js"></script>
-	<script type="text/javascript" src="../static/js/fading.js"></script>
+	<script type="text/javascript" src="../static/js/bootstrap.min.js" th:src="@{/js/bootstrap.min.js}"></script>
+	<script type="text/javascript" src="../static/js/scrolling.js" th:src="@{/js/scrolling.js}"></script>
+	<script type="text/javascript" src="../static/js/form-scroll.js" th:src="@{/js/form-scroll.js}"></script>
+	<script type="text/javascript" src="../static/js/toggle-on-hover.js" th:src="@{/js/toggle-on-hover.js}"></script>
+	<script type="text/javascript" src="../static/js/fading.js" th:src="@{/js/fading.js}"></script>
 
 </body>
 </html>

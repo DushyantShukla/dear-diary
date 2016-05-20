@@ -13,7 +13,7 @@ $(document).ready(function(){
 //        $("#box").slideToggle();
 //       
 //    });
-	$("#registration-toggler").click(function(e){ // <----you missed the '.' here in your selector.
+	$("#registration-toggler").click(function(e){
         e.stopPropagation();
         $("#box").slideToggle();
     });
